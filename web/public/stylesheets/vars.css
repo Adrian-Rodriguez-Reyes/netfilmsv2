@@ -1,0 +1,18 @@
+:root{
+    --font-color-cta: #fff;
+    --font-size-h1-cta : 10vw;
+
+    --main-bg-color: #f4efe8;
+    --main-text-color: #3d3b32;
+    --accent-color: #8b5e3c;
+    --secondary-text-color: #4d4b44;
+    --highlight-color: #6a4522;
+    --border-color: #8b5e3c;
+    --hover-border-color: #c7a17a;
+    
+    --font-color-header : #f8f8f8;
+    --font-family-header :  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    --site-width: 900px;
+      
+      
+}

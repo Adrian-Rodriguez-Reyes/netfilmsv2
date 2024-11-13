@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "password123",
+    "copies": [
+      { "id_movie": 1, "status": "fine", "format": "DVD" },
+      { "id_movie": 2, "status": "damaged", "format": "Blu-Ray" },
+      { "id_movie": 3, "status": "fine", "format": "Digital" },
+      { "id_movie": 4, "status": "fine", "format": "DVD" },
+      { "id_movie": 5, "status": "lost", "format": "VHS" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "janesmith@example.com",
+    "password": "mypassword456",
+    "copies": [
+      { "id_movie": 6, "status": "fine", "format": "DVD" },
+      { "id_movie": 7, "status": "lost", "format": "VHS" },
+      { "id_movie": 8, "status": "fine", "format": "Blu-Ray" },
+      { "id_movie": 9, "status": "fine", "format": "Blu-Ray" },
+      { "id_movie": 10, "status": "fine", "format": "Blu-Ray" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Bob Brown",
+    "email": "bobbrown@example.com",
+    "password": "secure789",
+    "copies": [
+      { "id_movie": 11, "status": "fine", "format": "DVD" },
+      { "id_movie": 12, "status": "lost", "format": "VHS" },
+      { "id_movie": 13, "status": "fine", "format": "Blu-Ray" },
+      { "id_movie": 14, "status": "fine", "format": "Blu-Ray" }
+    ]
+  }
+]

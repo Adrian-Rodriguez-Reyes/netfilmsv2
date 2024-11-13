@@ -1,0 +1,16 @@
+<section id="formLogin">
+    <div class="scrolling-image"></div>
+    <div class="backdrop"></div>
+    <div class="inner">
+        <h2>Login</h2>
+        <form action="/singIn" method="post">
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <% if (error) { %>
+                <p style="color: red;"><%= error %></p>
+            <% } %>
+            <span><a href="#">Forgot password?</a></span>
+            <button class="button" type="submit">Login</button>
+        </form>
+    </div>
+</section>

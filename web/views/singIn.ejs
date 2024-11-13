@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %>
+<style>
+    .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 8px 12px;
+        background-color: #bd904f;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 14px;
+        z-index: 100;
+    }
+    .back-button:hover {
+        background-color: #ae6502;
+    }
+</style>
+<body>
+<a href="/home" class="back-button">Back to Home</a>
+<main id="login">
+    <%- include("partials/authForm") %>
+</main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %>
+<link rel="stylesheet" href="/stylesheets/usermovies.css">
+<body>
+<!-- *** HEADER  *** -->
+<header id="top">
+    <nav id="navUser">
+        <div id="user" class="usuario-autenticado">
+            <img src="/images/user.png" alt="user" />
+            <span><%= user.name %></span>
+        </div>
+        <div class="menu">
+            <a href="#">Add Movie</a>
+            <a href="#">My Library</a>
+            <a href="#">Settings</a>
+            <a href="/support">Support</a>
+        </div>
+        <div class="logout">
+            <a href="/logout" class="button">Log out</a>
+        </div>
+    </nav>
+</header>
+
+<!--*** END HEADER ***-->
+
+<!--*** MAIN ***-->
+<main id="peliculas">
+    <section id="latestMovies" class="latest-movies">
+        <h1 style="font-size: 5rem;">Your library</h1>
+        <div class="movies-grid">
+            <% user.copies.forEach(copy => { %>
+                <div class="movie-card visible" data-aos="fade-up">
+                    <div class="image-container">
+                        <img src="<%= copy.movieDetails.image_url %>" alt="<%= copy.movieDetails.name %>" />
+                    </div>
+                    <p class="movie-title"><%= copy.movieDetails.name %></p>
+                    <p class="movie-status">Estatus: <%= copy.status %></p>
+                    <p class="movie-format">Formato: <%= copy.format %></p>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+</main>
+
+<!--*** END MAIN ***-->
+
+<!--*** FOOTER ***-->
+<%- include("partials/footer") %>
+
+<!--*** END FOOTER ***-->
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="/javascripts/cards.js"></script>
+</body>
+</html>

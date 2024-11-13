@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="shortcut icon" href="images/icon/carrete-de-pelicula.png" type="image/x-icon">
+      <!-- He usado una libreria de javascipt para animar los cards de manera mas facil -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>User Dashboard</title>
+  </head>
+  <body>
+    <!-- *** HEADER  *** -->
+    <header id="top">
+      <nav id="navUser">
+        <div id="user" class="usuario-autenticado">
+          <img src="images/user.png" alt="user" />
+          <span>Adrián</span>
+        </div>
+        <div class="menu">
+          <a href="#">Add Movie</a>
+          <a href="#">My Library</a>
+          <a href="#">Settings</a>
+          <a href="/support">Support</a>
+        </div>
+        <div class="logout">
+          <a href="/home" class="button">Log out</a>
+        </div>
+      </nav>
+    </header>
+    
+    <!--*** END HEADER ***-->
+
+    <!--*** MAIN ***-->
+    <main id="peliculas">
+      <!-- *** Latest Movies Section *** -->
+      <section id="latestMovies" class="latest-movies">
+        <h1 style="font-size: 5rem;">Your library</h1>
+        <div class="movies-grid">
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/caroline.png" alt="Caroline" />
+            <p>Caroline</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/vitabella.jpg" alt="Life is beautiful" />
+            <p>Life is beautiful</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/12_angry_men.jpg" alt="12 Angry Men" />
+            <p>12 Angry Men</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/american_history_x.jpg" alt="American History X" />
+            <p>American History X</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/american_psycho.jpg" alt="American Psycho" />
+            <p>American Psycho</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/fight_club.jpg" alt="Fight Club" />
+            <p>Fight Club</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/forrest_gump.jpg" alt="Forrest Gump" />
+            <p>Forrest Gump</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/goodfellas.jpg" alt="Goodfellas" />
+            <p>Goodfellas</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/greenmille.jpg" alt="The Green Mile" />
+            <p>The Green Mile</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/it_s_a_wonderful_life.jpg" alt="It's a Wonderful Life" />
+            <p>It's a Wonderful Life</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/psycho.jpg" alt="Psycho" />
+            <p>Psycho</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/schindler_s_list.jpg" alt="Schindler list" />
+            <p>Schindler's list</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/matrix.jpg" alt="Matrix" />
+            <p>Matrix</p>
+          </div>
+          <div class="movie-card" data-aos="fade-up">
+            <img src="images/films/the_godfather.jpg" alt="The Godfather" />
+            <p>The Godfather</p>
+          </div>          
+        </div>
+      </section>
+    </main>
+    <!--*** END MAIN ***-->
+
+    <!--*** FOOTER ***-->
+    <footer id="end">
+      <div class="footer-content">
+        <div class="social-media">
+          <a href="#"><img src="images/icons/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="images/icons/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="images/icons/instagram.png" alt="Instagram"></a>
+        </div>
+        <div class="footer-text">
+          <p>Developed by Adrian Rodriguez</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="/support">Support</a>
+        </div>
+      </div>
+    </footer>
+    <!--*** END FOOTER ***-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </body>
+  <script src="javascripts/cards.js"></script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %>
+<title>NetFilms - Home</title>
+<body>
+<%- include("partials/cta") %>
+<main id="films">
+    <section id="whyChooseUs" class="why-choose-us">
+        <div class="inner">
+            <h2>Why Choose Netfilms?</h2>
+            <p>
+                At Netfilms, we provide a seamless experience for managing your movies and TV shows.
+                With our user-friendly interface, organizing your media has never been easier.
+                You can keep track of your favorite shows, rate and review movies, and create custom lists,
+                all in one place. Experience the ultimate control over your entertainment library.
+            </p>
+
+            <h3>Who We Are</h3>
+            <p>
+                Netfilms is a company passionate about the world of cinema and series. We are dedicated to
+                providing a unique platform for movie lovers to manage and curate their content effortlessly.
+            </p>
+
+            <h3>How It Works</h3>
+            <p>
+                Our system allows you to add, categorize, and review movies and TV shows in your personal library.
+                With simple navigation and powerful features, you'll have complete control over your media collection.
+            </p>
+        </div>
+        <a href="#latestMovies" class="scroll-down-choose"> &#x25BC; </a>
+    </section>
+
+    <section id="latestMovies" class="latest-movies">
+        <h2>Latest Movies Added by Users</h2>
+        <div class="movies-grid">
+            <% peliculas.forEach(movie => { %>
+                <div class="movie-card" data-aos="fade-up" data-description="<%= movie.description %>" data-trailer-url="<%= movie.trailer_url %>">
+                    <img src="<%= movie.image_url %>" alt="<%= movie.name %>">
+                    <p><%= movie.name %></p>
+                </div>
+
+            <% }) %>
+        </div>
+    </section>
+</main>
+
+<dialog id="ligthbox">
+    <form method="dialog">
+        <h1></h1>
+        <div class="dialog-content-wrapper">
+            <div class="dialog-image">
+                <img src="" alt="">
+            </div>
+            <div class="dialog-content">
+                <p class="description"></p>
+                <div class="trailer-container">
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button type="button" class="button" id="close-dialog">Cerrar</button>
+        </div>
+    </form>
+</dialog>
+
+
+<%- include("partials/footer") %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="javascripts/dialog.js"></script>
+<script src="javascripts/cards.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("partials/head") %>
+    <title>NetFilms Support</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+        html, body {
+            background-color: #f4f0e6;
+            font-family: 'Georgia', serif;
+            color: #4a403a;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<header id="topSupport">
+    <a href="/home" class="button">Go to Homepage</a>
+    <h1>NetFilms Support</h1>
+</header>
+
+<main id="support">
+    <section class="container">
+        <%- include("partials/faq") %>
+
+        <form action="#" method="POST">
+            <h2>Contact Support</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="issue">Describe your issue</label>
+            <textarea id="issue" name="issue" rows="6" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<%- include("partials/footer") %>
+</body>
+</html>

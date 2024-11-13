@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "name": "Coraline",
+    "image_url": "images/films/caroline.png",
+    "description": "A dark animated fantasy about a girl who discovers a hidden world with sinister secrets.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/m9bOpeuvNwY?si=0p37HYCwazRnl0Su\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 2,
+    "name": "Life is Beautiful",
+    "image_url": "images/films/vitabella.jpg",
+    "description": "An Italian father uses humor and imagination to protect his son from the horrors of a concentration camp.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/8CTjcVr9Iao?si=rrfJZcIVqFkj8fxW\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 3,
+    "name": "12 Angry Men",
+    "image_url": "images/films/12_angry_men.jpg",
+    "description": "A powerful courtroom drama where a single juror tries to influence the opinion of eleven others.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/TEN-2uTi2c0?si=6mcsvJQx6aae0xOu\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 4,
+    "name": "American History X",
+    "image_url": "images/films/american_history_x.jpg",
+    "description": "A former neo-Nazi fights to save his brother from following the same violent path he once took.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/XfQYHqsiN5g?si=_QBMpEdJTnQZIi9g\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 5,
+    "name": "American Psycho",
+    "image_url": "images/films/american_psycho.jpg",
+    "description": "A wealthy New York investment banker hides his violent psychopathic ego from his friends and colleagues.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/HHMaiPPjHHg?si=vxVryRvtTHnNQUF8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 6,
+    "name": "Fight Club",
+    "image_url": "images/films/fight_club.jpg",
+    "description": "A man disillusioned with consumerism finds solace in an underground fight club with a rebellious soap salesman.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qtRKdVHc-cE?si=quwk3YolG9G7H8jE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 7,
+    "name": "Forrest Gump",
+    "image_url": "images/films/forrest_gump.jpg",
+    "description": "A man with a low IQ experiences a series of extraordinary historical events in his quest for true love.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bLvqoHBptjg?si=lhchPpJShOgf9IAC\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 8,
+    "name": "Goodfellas",
+    "image_url": "images/films/goodfellas.jpg",
+    "description": "The rise and fall of a young man in the New York mafia as he navigates crime, power, and betrayal.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/2ilzidi_J8Q?si=hGT6kMLqj1KxCuIz\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 9,
+    "name": "The Green Mile",
+    "image_url": "images/films/greenmille.jpg",
+    "description": "A death row officer develops a bond with a prisoner who possesses a mysterious healing power.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Ki4haFrqSrw?si=9GnoEFQ0ZugnctFL\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 10,
+    "name": "It's a Wonderful Life",
+    "image_url": "images/films/it_s_a_wonderful_life.jpg",
+    "description": "A man on the verge of despair discovers how his life has positively impacted others in his community.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iLR3gZrU2Xo?si=TDg4HNmSyQNyS821\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 11,
+    "name": "Psycho",
+    "image_url": "images/films/psycho.jpg",
+    "description": "A psychological thriller that follows the strange events surrounding the Bates Motel and its owner, Norman Bates.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/NG3-GlvKPcg?si=ZdzHUiRUUe9UWb9E\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 12,
+    "name": "Schindler's List",
+    "image_url": "images/films/schindler_s_list.jpg",
+    "description": "A historical drama about a businessman who saved hundreds of Jews during the Holocaust.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/gG22XNhtnoY?si=rbYswtefEXFSh-2O\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 13,
+    "name": "The Matrix",
+    "image_url": "images/films/matrix.jpg",
+    "description": "A hacker discovers a shocking truth about reality and fights against a computer-controlled system.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/vKQi3bBA1y8?si=0SE0hfD_93IxH3mu\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
+    "id": 14,
+    "name": "The Godfather",
+    "image_url": "images/films/the_godfather.jpg",
+    "description": "The story of a powerful Italian-American crime family and the transfer of power to the next generation.",
+    "trailer_url": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/UaVTIH8mujA?si=Uan04eQrLoOVJ_r9\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  }
+]

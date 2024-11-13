@@ -2,6 +2,7 @@
 <html lang="en">
 <%- include("partials/head") %>
 <link rel="stylesheet" href="/stylesheets/usermovies.css">
+<link rel="stylesheet" href="/stylesheets/userLibrary.css">
 <body>
 <!-- *** HEADER  *** -->
 <header id="top">
@@ -25,19 +26,29 @@
 <!--*** END HEADER ***-->
 
 <!--*** MAIN ***-->
-<main id="peliculas">
-    <section id="latestMovies" class="latest-movies">
-        <h1 style="font-size: 5rem;">Your library</h1>
+<main class="user-library">
+    <section class="movies-section">
+        <h1>Your Library</h1>
         <div class="movies-grid">
             <% user.copies.forEach(copy => { %>
-                <div class="movie-card visible" data-aos="fade-up">
-                    <div class="image-container">
-                        <img src="<%= copy.movieDetails.image_url %>" alt="<%= copy.movieDetails.name %>" />
+                <a href="/movie/<%= copy.movieDetails.id %>" class="movie-link">
+                    <div class="movie-card">
+                        <div class="movie-image-container">
+                            <img src="<%= copy.movieDetails.image_url %>" alt="<%= copy.movieDetails.name %>">
+                        </div>
+                        <p class="movie-title"><%= copy.movieDetails.name %></p>
+                        <div class="movie-info">
+                            <p>
+                                <strong>Status:</strong>
+                                <span><%= copy.status %></span>
+                            </p>
+                            <p>
+                                <strong>Format:</strong>
+                                <span><%= copy.format %></span>
+                            </p>
+                        </div>
                     </div>
-                    <p class="movie-title"><%= copy.movieDetails.name %></p>
-                    <p class="movie-status">Estatus: <%= copy.status %></p>
-                    <p class="movie-format">Formato: <%= copy.format %></p>
-                </div>
+                </a>
             <% }); %>
         </div>
     </section>

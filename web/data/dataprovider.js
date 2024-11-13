@@ -7,9 +7,26 @@ function getAllPeliculas() {
 }
 
 // Obtener una película por ID
-function getPelicula(id) {
-    return peliculas.find(pelicula => pelicula.id === id);
+function getPelicula(movieId, userId = null) {
+    const pelicula = peliculas.find(pelicula => pelicula.id === movieId);
+
+    if (pelicula && userId) {
+        const user = usuarios.find(u => u.id === userId);
+
+        if (user) {
+            const userCopy = user.copies.find(copy => copy.id_movie === movieId);
+
+            if (userCopy) {
+                // Agrega formato y estatus si se encuentra la copia del usuario
+                pelicula.format = userCopy.format;
+                pelicula.status = userCopy.status;
+            }
+        }
+    }
+
+    return pelicula;
 }
+
 
 // Validar un usuario por email y contraseña y enriquecer sus copias con datos de películas
 function validateUser(email, password) {
@@ -21,7 +38,9 @@ function validateUser(email, password) {
             const copy = user.copies[i];
             const movieDetails = getPelicula(copy.id_movie);
 
-            // Agregar los detalles de la película al objeto `copy`
+            console.log(`Enriqueciendo copia ${i} con ID de película: ${copy.id_movie}`);
+            console.log("Detalles de la película encontrados:", movieDetails);
+
             if (movieDetails) {
                 copy.movieDetails = movieDetails;
             } else {
@@ -32,6 +51,7 @@ function validateUser(email, password) {
     }
     return null; // Devuelve null si el usuario no existe o no coincide la contraseña
 }
+
 
 module.exports = {
     getAllPeliculas,

@@ -1,4 +1,3 @@
-/* Estilos Generales */
 body, html {
     margin: 0;
     padding: 0;
@@ -7,7 +6,6 @@ body, html {
     color: #4b2e1d;
 }
 
-/* Biblioteca de Películas */
 .user-library {
     background-color: #f6efe5;
     padding: 40px 20px;
@@ -27,7 +25,6 @@ body, html {
     justify-items: center;
 }
 
-/* Enlace y Tarjeta */
 .movie-link {
     display: block;
     width: 100%;
@@ -42,7 +39,7 @@ body, html {
     border-radius: 8px;
     text-align: center;
     transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
-    min-height: 450px;
+    min-height: 450px; /* Asegura que todas las tarjetas tengan la misma altura mínima */
     max-width: 250px;
     display: flex;
     flex-direction: column;
@@ -56,7 +53,6 @@ body, html {
     border-color: #d96512;
 }
 
-/* Imagen de la Película */
 .movie-image-container {
     width: 100%;
     max-height: 300px;
@@ -78,41 +74,17 @@ body, html {
     transform: scale(1.05);
 }
 
-/* Título centrado debajo de la imagen */
 .movie-title {
     font-size: 1.2rem;
     font-weight: bold;
     color: #4b2e1d;
-    margin: 15px 0;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    margin: 10px 0;
     min-height: 50px;
 }
 
-/* Información de la Película en la Parte Inferior */
-.movie-info {
-    margin-top: auto;
-    text-align: left;
-    width: 100%;
-}
-
-.movie-info p {
-    display: flex;
-    justify-content: space-between;
+.movie-status, .movie-format {
     font-size: 1rem;
     color: #4b2e1d;
     margin: 5px 0;
-}
-
-.movie-info p strong {
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.movie-info p span {
-    text-align: center;
-    flex-grow: 1;
+    min-height: 20px;
 }

@@ -33,7 +33,7 @@ router.post('/singIn', (req, res) => {
     req.session.user = user;
     res.redirect('/userpage');
   } else {
-    res.render('singIn', { error: 'Email o contraseña incorrectos' });
+    res.render('singIn', { error: 'Incorrect email or password' });
   }
 });
 
@@ -45,10 +45,34 @@ router.get('/userpage', (req, res) => {
   }
 });
 
-// Ruta para cerrar sesión
+router.get('/movie/:id', (req, res) => {
+  if (!req.session.user) {
+    return res.redirect('/singIn');
+  }
+
+  const movieId = parseInt(req.params.id);
+  const userId = req.session.user.id;
+  const movieDetails = data.getPelicula(movieId, userId);
+
+  if (movieDetails) {
+    const userCopy = req.session.user.copies.find(copy => copy.id_movie === movieId);
+
+    if (userCopy) {
+      res.render('movie', { movie: movieDetails });
+    } else {
+      console.log("Acceso denegado. La película no pertenece al usuario.");
+      res.redirect('/userpage');
+    }
+  } else {
+    console.log("Película no encontrada para ID:", movieId);
+    res.redirect('/userpage');
+  }
+});
+
 router.get('/logout', (req, res) => {
   req.session.destroy();
   res.redirect('/singIn');
 });
+
 
 module.exports = router;
